@@ -1,0 +1,568 @@
+{
+  "reduct": [
+    "Weapon Desc"
+  ],
+  "rules": [
+    {
+      "premise": {
+        "Weapon Desc": "Unknown"
+      },
+      "decision": 0.0,
+      "support": 677744
+    },
+    {
+      "premise": {
+        "Weapon Desc": "KNIFE WITH BLADE 6INCHES OR LESS"
+      },
+      "decision": 200.0,
+      "support": 6838
+    },
+    {
+      "premise": {
+        "Weapon Desc": "UNKNOWN WEAPON/OTHER WEAPON"
+      },
+      "decision": 500.0,
+      "support": 36390
+    },
+    {
+      "premise": {
+        "Weapon Desc": "STRONG-ARM (HANDS, FIST, FEET OR BODILY FORCE)"
+      },
+      "decision": 400.0,
+      "support": 174761
+    },
+    {
+      "premise": {
+        "Weapon Desc": "AIR PISTOL/REVOLVER/RIFLE/BB GUN"
+      },
+      "decision": 114.0,
+      "support": 1864
+    },
+    {
+      "premise": {
+        "Weapon Desc": "HAND GUN"
+      },
+      "decision": 102.0,
+      "support": 20182
+    },
+    {
+      "premise": {
+        "Weapon Desc": "UNKNOWN FIREARM"
+      },
+      "decision": 106.0,
+      "support": 6582
+    },
+    {
+      "premise": {
+        "Weapon Desc": "VERBAL THREAT"
+      },
+      "decision": 511.0,
+      "support": 23846
+    },
+    {
+      "premise": {
+        "Weapon Desc": "SEMI-AUTOMATIC PISTOL"
+      },
+      "decision": 109.0,
+      "support": 7267
+    },
+    {
+      "premise": {
+        "Weapon Desc": "STICK"
+      },
+      "decision": 308.0,
+      "support": 2249
+    },
+    {
+      "premise": {
+        "Weapon Desc": "OTHER KNIFE"
+      },
+      "decision": 207.0,
+      "support": 5879
+    },
+    {
+      "premise": {
+        "Weapon Desc": "KNIFE WITH BLADE OVER 6 INCHES IN LENGTH"
+      },
+      "decision": 201.0,
+      "support": 1697
+    },
+    {
+      "premise": {
+        "Weapon Desc": "MACE/PEPPER SPRAY"
+      },
+      "decision": 512.0,
+      "support": 3730
+    },
+    {
+      "premise": {
+        "Weapon Desc": "FOLDING KNIFE"
+      },
+      "decision": 204.0,
+      "support": 2266
+    },
+    {
+      "premise": {
+        "Weapon Desc": "PIPE/METAL PIPE"
+      },
+      "decision": 312.0,
+      "support": 2469
+    },
+    {
+      "premise": {
+        "Weapon Desc": "ROCK/THROWN OBJECT"
+      },
+      "decision": 306.0,
+      "support": 2739
+    },
+    {
+      "premise": {
+        "Weapon Desc": "RIFLE"
+      },
+      "decision": 103.0,
+      "support": 496
+    },
+    {
+      "premise": {
+        "Weapon Desc": "FIRE"
+      },
+      "decision": 506.0,
+      "support": 681
+    },
+    {
+      "premise": {
+        "Weapon Desc": "REVOLVER"
+      },
+      "decision": 101.0,
+      "support": 1186
+    },
+    {
+      "premise": {
+        "Weapon Desc": "VEHICLE"
+      },
+      "decision": 307.0,
+      "support": 3260
+    },
+    {
+      "premise": {
+        "Weapon Desc": "BOTTLE"
+      },
+      "decision": 212.0,
+      "support": 2415
+    },
+    {
+      "premise": {
+        "Weapon Desc": "RAZOR"
+      },
+      "decision": 208.0,
+      "support": 66
+    },
+    {
+      "premise": {
+        "Weapon Desc": "SIMULATED GUN"
+      },
+      "decision": 113.0,
+      "support": 1252
+    },
+    {
+      "premise": {
+        "Weapon Desc": "BRASS KNUCKLES"
+      },
+      "decision": 303.0,
+      "support": 208
+    },
+    {
+      "premise": {
+        "Weapon Desc": "UNKNOWN TYPE CUTTING INSTRUMENT"
+      },
+      "decision": 223.0,
+      "support": 884
+    },
+    {
+      "premise": {
+        "Weapon Desc": "KITCHEN KNIFE"
+      },
+      "decision": 205.0,
+      "support": 1921
+    },
+    {
+      "premise": {
+        "Weapon Desc": "BLUNT INSTRUMENT"
+      },
+      "decision": 302.0,
+      "support": 1387
+    },
+    {
+      "premise": {
+        "Weapon Desc": "OTHER FIREARM"
+      },
+      "decision": 107.0,
+      "support": 948
+    },
+    {
+      "premise": {
+        "Weapon Desc": "CLUB/BAT"
+      },
+      "decision": 304.0,
+      "support": 2088
+    },
+    {
+      "premise": {
+        "Weapon Desc": "HAMMER"
+      },
+      "decision": 311.0,
+      "support": 1355
+    },
+    {
+      "premise": {
+        "Weapon Desc": "STUN GUN"
+      },
+      "decision": 513.0,
+      "support": 395
+    },
+    {
+      "premise": {
+        "Weapon Desc": "RAZOR BLADE"
+      },
+      "decision": 210.0,
+      "support": 118
+    },
+    {
+      "premise": {
+        "Weapon Desc": "BELT FLAILING INSTRUMENT/CHAIN"
+      },
+      "decision": 301.0,
+      "support": 688
+    },
+    {
+      "premise": {
+        "Weapon Desc": "SCREWDRIVER"
+      },
+      "decision": 219.0,
+      "support": 783
+    },
+    {
+      "premise": {
+        "Weapon Desc": "SHOTGUN"
+      },
+      "decision": 104.0,
+      "support": 315
+    },
+    {
+      "premise": {
+        "Weapon Desc": "CONCRETE BLOCK/BRICK"
+      },
+      "decision": 310.0,
+      "support": 706
+    },
+    {
+      "premise": {
+        "Weapon Desc": "PHYSICAL PRESENCE"
+      },
+      "decision": 515.0,
+      "support": 945
+    },
+    {
+      "premise": {
+        "Weapon Desc": "MACHETE"
+      },
+      "decision": 215.0,
+      "support": 1144
+    },
+    {
+      "premise": {
+        "Weapon Desc": "CAUSTIC CHEMICAL/POISON"
+      },
+      "decision": 503.0,
+      "support": 241
+    },
+    {
+      "premise": {
+        "Weapon Desc": "SCALDING LIQUID"
+      },
+      "decision": 510.0,
+      "support": 145
+    },
+    {
+      "premise": {
+        "Weapon Desc": "OTHER CUTTING INSTRUMENT"
+      },
+      "decision": 218.0,
+      "support": 932
+    },
+    {
+      "premise": {
+        "Weapon Desc": "BOWIE KNIFE"
+      },
+      "decision": 202.0,
+      "support": 33
+    },
+    {
+      "premise": {
+        "Weapon Desc": "GLASS"
+      },
+      "decision": 221.0,
+      "support": 335
+    },
+    {
+      "premise": {
+        "Weapon Desc": "TOY GUN"
+      },
+      "decision": 112.0,
+      "support": 157
+    },
+    {
+      "premise": {
+        "Weapon Desc": "FIXED OBJECT"
+      },
+      "decision": 305.0,
+      "support": 406
+    },
+    {
+      "premise": {
+        "Weapon Desc": "AXE"
+      },
+      "decision": 211.0,
+      "support": 323
+    },
+    {
+      "premise": {
+        "Weapon Desc": "BOARD"
+      },
+      "decision": 309.0,
+      "support": 310
+    },
+    {
+      "premise": {
+        "Weapon Desc": "BOMB THREAT"
+      },
+      "decision": 501.0,
+      "support": 194
+    },
+    {
+      "premise": {
+        "Weapon Desc": "SCISSORS"
+      },
+      "decision": 216.0,
+      "support": 659
+    },
+    {
+      "premise": {
+        "Weapon Desc": "ROPE/LIGATURE"
+      },
+      "decision": 509.0,
+      "support": 50
+    },
+    {
+      "premise": {
+        "Weapon Desc": "TIRE IRON"
+      },
+      "decision": 514.0,
+      "support": 149
+    },
+    {
+      "premise": {
+        "Weapon Desc": "SWORD"
+      },
+      "decision": 217.0,
+      "support": 138
+    },
+    {
+      "premise": {
+        "Weapon Desc": "SWITCH BLADE"
+      },
+      "decision": 206.0,
+      "support": 234
+    },
+    {
+      "premise": {
+        "Weapon Desc": "SYRINGE"
+      },
+      "decision": 220.0,
+      "support": 22
+    },
+    {
+      "premise": {
+        "Weapon Desc": "SEMI-AUTOMATIC RIFLE"
+      },
+      "decision": 110.0,
+      "support": 55
+    },
+    {
+      "premise": {
+        "Weapon Desc": "BOW AND ARROW"
+      },
+      "decision": 502.0,
+      "support": 28
+    },
+    {
+      "premise": {
+        "Weapon Desc": "HECKLER & KOCH 93 SEMIAUTOMATIC ASSAULT RIFLE"
+      },
+      "decision": 122.0,
+      "support": 104
+    },
+    {
+      "premise": {
+        "Weapon Desc": "CLEAVER"
+      },
+      "decision": 213.0,
+      "support": 36
+    },
+    {
+      "premise": {
+        "Weapon Desc": "DOG/ANIMAL (SIC ANIMAL ON)"
+      },
+      "decision": 516.0,
+      "support": 53
+    },
+    {
+      "premise": {
+        "Weapon Desc": "SAWED OFF RIFLE/SHOTGUN"
+      },
+      "decision": 105.0,
+      "support": 29
+    },
+    {
+      "premise": {
+        "Weapon Desc": "BLACKJACK"
+      },
+      "decision": 300.0,
+      "support": 12
+    },
+    {
+      "premise": {
+        "Weapon Desc": "ASSAULT WEAPON/UZI/AK47/ETC"
+      },
+      "decision": 115.0,
+      "support": 77
+    },
+    {
+      "premise": {
+        "Weapon Desc": "EXPLOXIVE DEVICE"
+      },
+      "decision": 505.0,
+      "support": 86
+    },
+    {
+      "premise": {
+        "Weapon Desc": "LIQUOR/DRUGS"
+      },
+      "decision": 507.0,
+      "support": 54
+    },
+    {
+      "premise": {
+        "Weapon Desc": "RELIC FIREARM"
+      },
+      "decision": 125.0,
+      "support": 13
+    },
+    {
+      "premise": {
+        "Weapon Desc": "AUTOMATIC WEAPON/SUB-MACHINE GUN"
+      },
+      "decision": 108.0,
+      "support": 28
+    },
+    {
+      "premise": {
+        "Weapon Desc": "HECKLER & KOCH 91 SEMIAUTOMATIC ASSAULT RIFLE"
+      },
+      "decision": 121.0,
+      "support": 2
+    },
+    {
+      "premise": {
+        "Weapon Desc": "DEMAND NOTE"
+      },
+      "decision": 504.0,
+      "support": 65
+    },
+    {
+      "premise": {
+        "Weapon Desc": "ICE PICK"
+      },
+      "decision": 214.0,
+      "support": 69
+    },
+    {
+      "premise": {
+        "Weapon Desc": "DIRK/DAGGER"
+      },
+      "decision": 203.0,
+      "support": 92
+    },
+    {
+      "premise": {
+        "Weapon Desc": "MARTIAL ARTS WEAPONS"
+      },
+      "decision": 508.0,
+      "support": 14
+    },
+    {
+      "premise": {
+        "Weapon Desc": "STRAIGHT RAZOR"
+      },
+      "decision": 209.0,
+      "support": 19
+    },
+    {
+      "premise": {
+        "Weapon Desc": "STARTER PISTOL/REVOLVER"
+      },
+      "decision": 111.0,
+      "support": 41
+    },
+    {
+      "premise": {
+        "Weapon Desc": "UZI SEMIAUTOMATIC ASSAULT RIFLE"
+      },
+      "decision": 118.0,
+      "support": 10
+    },
+    {
+      "premise": {
+        "Weapon Desc": "MAC-11 SEMIAUTOMATIC ASSAULT WEAPON"
+      },
+      "decision": 120.0,
+      "support": 3
+    },
+    {
+      "premise": {
+        "Weapon Desc": "ANTIQUE FIREARM"
+      },
+      "decision": 116.0,
+      "support": 9
+    },
+    {
+      "premise": {
+        "Weapon Desc": "M1-1 SEMIAUTOMATIC ASSAULT RIFLE"
+      },
+      "decision": 123.0,
+      "support": 1
+    },
+    {
+      "premise": {
+        "Weapon Desc": "MAC-10 SEMIAUTOMATIC ASSAULT WEAPON"
+      },
+      "decision": 119.0,
+      "support": 2
+    },
+    {
+      "premise": {
+        "Weapon Desc": "UNK TYPE SEMIAUTOMATIC ASSAULT RIFLE"
+      },
+      "decision": 117.0,
+      "support": 15
+    },
+    {
+      "premise": {
+        "Weapon Desc": "M-14 SEMIAUTOMATIC ASSAULT RIFLE"
+      },
+      "decision": 124.0,
+      "support": 2
+    }
+  ],
+  "coverage": 1.0
+}

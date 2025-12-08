@@ -1,0 +1,60 @@
+{
+  "mode": "single_dataset",
+
+  "data": {
+    "biased_csv": "./Student_Performance_Behavior_Dataset/Students_Grading_Dataset_Biased.csv",
+    "unbiased_csv": "./Student_Performance_Behavior_Dataset/Students_Performance_Dataset.csv",
+
+    "file": "./health/heart_failure.csv",
+    "file_type": "csv",
+
+    "categorical_definite": [
+      "Sex",
+      "ChestPainType",
+      "RestingECG",
+      "ExerciseAngina",
+      "ST_Slope"
+    ],
+
+    "categorical_optional": []
+  },
+
+  "decision_attribute": "HeartDisease",
+  "bins": 4,
+  "cutoffs": {},
+
+  "create_pass": true,
+  "pass_grades": [1],
+
+  "exclude_attrs": [],
+
+  "operations": {
+    "reduct_grade": false,
+    "rules_grade": false,
+    "coverage_grade": false,
+
+    "reduct_pass": true,
+    "rules_pass": true,
+    "coverage_pass": true,
+    "indiscernibility_pass": false,
+
+    "reduct": true,
+    "rules": true,
+    "indiscernibility": false,
+    "coverage": true,
+
+    "plots": true
+  },
+
+  "output": {
+    "dir": "./auswertung_results_heart_failure",
+    "prefix": "",
+    "save_intermediate_disc": false,
+    "save_reducts": true,
+    "save_rules": true,
+    "save_indiscernibility": false,
+    "save_coverage": true,
+    "save_plots": true,
+    "overwrite": true
+  }
+}
