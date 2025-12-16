@@ -1,0 +1,30 @@
+{
+  "biased": {
+    "grade": [
+      "First_Name",
+      "Last_Name",
+      "Gender",
+      "Attendance (%)_disc",
+      "Total_Score_disc",
+      "Final_Score_disc"
+    ],
+    "pass": [
+      "Attendance (%)_disc"
+    ]
+  },
+  "unbiased": {
+    "grade": [
+      "First_Name",
+      "Total_Score_disc",
+      "Last_Name",
+      "Quizzes_Avg_disc",
+      "Study_Hours_per_Week_disc"
+    ],
+    "pass": [
+      "Total_Score_disc",
+      "Projects_Score_disc",
+      "First_Name",
+      "Last_Name"
+    ]
+  }
+}

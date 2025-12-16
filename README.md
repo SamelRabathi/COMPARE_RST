@@ -1,80 +1,85 @@
-# COMPARE_RST
-
+# COMPARE_RST  
 # Rough Set Analyse Toolkit (RST) für COMPARE
 
 ## 1. Projektbeschreibung
 Dieses Projekt analysiert Datensätze mithilfe der **Rough-Set-Theorie (Pawlak)**.
-Es dient zum **Berechnen von Redukten, Regeln, Coverage** und optional zur
-**Visualisierung als PDF-Plots**.
+Es dient zur **Berechnung von Redukten, Entscheidungsregeln, Coverage-Werten**
+und unterstützt zusätzlich deren **Visualisierung über PDF-Plots**.
 
-Das System ist vollständig **konfigurationsbasiert** — neue Datensätze werden
-über JSON-Dateien beschrieben, ohne dass Code angepasst werden muss.
+Das System ist vollständig **konfigurationsbasiert** – neue Datensätze werden
+ausschließlich über JSON-Dateien eingebunden.  
+Codeanpassungen sind nicht notwendig.
 
-Einsatz im Rahmen von:
-*Masterarbeit [Erweiterung und Optimierung von Äquivalenzrelationen für Rough Set basierte Klassifikationsverfahren] als Bestandteil des Projektes "COMPARE"*  
+> Einsatz im Rahmen der Masterarbeit  
+> **„Erweiterung und Optimierung von Äquivalenzrelationen für Rough Set basierte Klassifikationsverfahren“**  
+> im Projekt **COMPARE**
 
 ---
 
 ## 2. Features
-✔ Studenten-Pipeline: biased vs. unbiased Vergleich  
-✔ Einzel-Datensatz-Analyse (Crimes, Heart Failure, beliebige Daten)  
-✔ Generisches Pass-Label (aktivierbar/abschaltbar über `pass_grades`)  
-✔ Diskretisierung mit automatisch oder benutzerdefiniertem Cutoff  
-✔ Export von **Redukten**, **Regeln**, **Coverage**, **PDF-Plots**  
-✔ Einheitliche JSON-Struktur für *alle* Datensätze  
+
+```
+✔ Bei Kaggel-Daten auf Reduzierung der Redukte und anderen Erkenntnissen der RST untersuchen: 
+    * Studenten-Pipeline: Vergleich **biased vs. unbiased**  
+    * generische **Single-Dataset Analyse** (Crimes, Heart Failure, beliebige Daten)  
+✔ **Pass-Label Support** über `pass_grades` aktivierbar/deaktivierbar  
+✔ automatische oder manuelle **Diskretisierung**  
+✔ exportiert **Redukte**, **Regeln**, **Coverage**, **Plots als PDF**  
+✔ **einheitliche JSON-Struktur** für alle Datensätze  
+```
 
 ---
 
 ## 3. Installation
 
-
-```bash```
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install "numpy<2" pandas matplotlib
+```bash:```
+```
+$ python3 -m venv .venv
+$ source .venv/bin/activate        # Linux/macOS - Für Windows: .venv\Scripts\Activate.ps1
+$ pip install --upgrade pip
+$ pip install --upgrade -r requirements.txt
+```
 
 ---
 
 ## 4. Projektstruktur
 
-
+```text
 Projekt/
 │── Auswertung/
-│   ├── core.py          # Pipeline Logik (Students + Single-Dataset)
-│   ├── config.py        # JSON Loader + Defaults
+│   ├── core.py          # Pipeline Logik (Studenten & Single-Dataset)
+│   ├── config.py        # JSON-Lader + Default Parameter
 │   ├── configs/         # Beispiel-Konfigurationen
 │   │   ├── students_behavior.json
 │   │   ├── crimes.json
 │   │   └── heart_failure.json
-│── rst_functions.py     # Quick Reduct, Rules, Coverage...
+│── rst_functions.py     # Algorithmen (Reduct, Rules, Coverage, ...)
 │── README.md            # Dieses Dokument
-│── Daten/               # Datensätze (Beispiele)
+│── Daten/               # Datensätze (außer die werden sow´fort von einer externen Quelle geladen)
+```
 
 ---
 
 ## 5. Nutzung
 
-
-python -m Auswertung <config_name>
+```python -m Auswertung <config_name>```
 
 #### Beispiele:
 
-'''
-python -m Auswertung students_behavior
-python -m Auswertung crimes
-python -m Auswertung heart_failure
-'''
+```text
+* python -m Auswertung students_behavior
+* python -m Auswertung crimes
+* python -m Auswertung heart_failure
+```
 
 ---
 
-
 ## 6. JSON-Konfiguration
 
-ALLE Configs haben dieselbe Struktur
-→ mode, data, decision_attribute, create_pass, operations, output
+Alle Configs besitzen dasselbe Schema:
+    → mode, data, decision_attribute, create_pass, operations, output...
 
-
+```text
 {
   "mode": "student_two_datasets | single_dataset",
 
@@ -113,28 +118,27 @@ ALLE Configs haben dieselbe Struktur
     "save_plots": true
   }
 }
+```
 
 ---
-
 
 ## 7. Beispiele:
 
 ##### Studenten-Vergleich
-```
-python -m Auswertung students_behavior
-```
-erstellt:
-```
+```python -m Auswertung students_behavior```
+
+Erstellt im Ordner ```./results/``` den Ordner ```results_students/``` mit folgendem Aufbau:
+
+```text
 results_students/
- ├ reducts.json
- ├ rules.json
- ├ coverage.json
- ├ coverage_grade.pdf
- ├ coverage_pass.pdf
+├── reducts.json          # Redukte
+├── rules.json            # Ableitungsregeln
+├── coverage.json         # Abdeckung wie viel Prozent durch Regeln bestimmt werden kann
+├── coverage_grade.pdf    # Prozente zu Noten
+├── coverage_pass.pdf     # Prozente zu Bestehen
 ```
 
 ---
-
 
 ## 8. Output-Interpretation
 
@@ -149,17 +153,16 @@ results_students/
 
 ## 9. Hinweise
 
-pass_grades = [] → Pass-Label deaktiviert
+* pass_grades = [] → Pass-Label deaktiviert
 
-Größere Datensätze → Coverage dauert länger
+* Größere Datensätze → Coverage dauert länger*
 
-PDF-Plots nur wenn aktiviert:
-operations.plots = true && output.save_plots = true
+* PDF-Plots nur wenn aktiviert:
+    * operations.plots = true && output.save_plots = true
 
 ---
 
-
-## 10. Weiterentwicklungsideen
+## 10.  Weiterentwicklungsideen
 
 Batch-Runs über mehrere Configs
 
